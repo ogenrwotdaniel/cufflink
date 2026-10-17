@@ -20,8 +20,15 @@ android {
     }
 
     buildTypes {
+        // The release build is what goes onto the watch: R8-shrunk to a few MB, because an
+        // unshrunk Compose debug APK is ~38 MB and Wi-Fi adb to a watch drops long transfers.
+        // Signed with the debug key on purpose until a release key exists — the Data Layer
+        // only links the phone and watch apps when both carry the same signature.
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"))
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
