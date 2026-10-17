@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cufflink mark: a brass bezel (the watch) holding a folded page (the file),
+     with a teal stud on the rim (the link to the phone). Drawn inside the 66dp
+     adaptive-icon safe zone of a 108dp canvas. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- bezel ring -->
+    <path android:fillColor="#00000000" android:strokeColor="#E8B04B" android:strokeWidth="5"
+        android:pathData="M54,29a25,25 0,1 1,0 50a25,25 0,1 1,0 -50z" />
+    <!-- bezel ticks -->
+    <path android:fillColor="#00000000" android:strokeColor="#8A6A2C" android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M54,33.5v3 M54,71.5v3 M33.5,54h3 M71.5,54h3" />
+    <!-- page -->
+    <path android:fillColor="#F5EBD8"
+        android:pathData="M45,40h12l7,7v21a2,2 0,0 1,-2 2h-17a2,2 0,0 1,-2 -2v-26a2,2 0,0 1,2 -2z" />
+    <!-- folded corner -->
+    <path android:fillColor="#E8B04B" android:pathData="M57,40v5a2,2 0,0 0,2 2h5z" />
+    <!-- text lines -->
+    <path android:fillColor="#00000000" android:strokeColor="#0E1726" android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M48,53h12 M48,58h12 M48,63h8" />
+    <!-- the stud: where the link attaches -->
+    <path android:fillColor="#3FC1B0" android:strokeColor="#0E1726" android:strokeWidth="2.5"
+        android:pathData="M71.7,30.3a6.5,6.5 0,1 1,0 13a6.5,6.5 0,1 1,0 -13z" />
+</vector>

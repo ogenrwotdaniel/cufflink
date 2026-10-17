@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 500" width="1024" height="500">
+  <title>Cufflink — files for your wrist</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16213A"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#E8B04B" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#E8B04B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="500" fill="url(#sky)"/>
+  <circle cx="770" cy="250" r="230" fill="url(#glow)"/>
+
+  <!-- phone -->
+  <rect x="560" y="120" width="120" height="240" rx="18" fill="#111A2E" stroke="#4A5875" stroke-width="3"/>
+  <rect x="574" y="146" width="92" height="40" rx="8" fill="#3A2E14"/>
+  <rect x="574" y="196" width="92" height="22" rx="6" fill="#1E2C4A"/>
+  <rect x="574" y="226" width="92" height="22" rx="6" fill="#1E2C4A"/>
+  <rect x="574" y="256" width="60" height="22" rx="6" fill="#12403B"/>
+
+  <!-- the beam: a dotted arc from phone to watch -->
+  <path d="M680,200 C740,120 800,120 840,170" fill="none" stroke="#3FC1B0" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
+  <path d="M832,156 l12,16 l-19,3" fill="none" stroke="#3FC1B0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- watch -->
+  <rect x="842" y="130" width="70" height="60" rx="10" fill="#26355A"/>
+  <rect x="842" y="310" width="70" height="60" rx="10" fill="#26355A"/>
+  <rect x="822" y="180" width="110" height="140" rx="30" fill="#2A3754"/>
+  <circle cx="877" cy="250" r="56" fill="#000"/>
+  <circle cx="877" cy="250" r="52" fill="none" stroke="#E8B04B" stroke-width="5" stroke-dasharray="230 400" stroke-linecap="round" transform="rotate(-90 877 250)"/>
+  <path d="M866,228h15l8,8v26a2,2 0 0 1 -2,2h-21a2,2 0 0 1 -2,-2v-32a2,2 0 0 1 2,-2z" fill="#F5EBD8"/>
+  <path d="M881,228v6a2,2 0 0 0 2,2h6z" fill="#E8B04B"/>
+  <text x="877" y="258" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#0B1220">♪</text>
+
+  <!-- wordmark -->
+  <g transform="translate(64,150)">
+    <svg x="0" y="0" width="120" height="120" viewBox="0 0 108 108">
+      <circle cx="54" cy="54" r="25" fill="none" stroke="#E8B04B" stroke-width="5"/>
+      <path d="M45,40h12l7,7v21a2,2 0 0 1 -2,2h-17a2,2 0 0 1 -2,-2v-26a2,2 0 0 1 2,-2z" fill="#F5EBD8"/>
+      <path d="M57,40v5a2,2 0 0 0 2,2h5z" fill="#E8B04B"/>
+      <circle cx="71.7" cy="36.8" r="6.5" fill="#3FC1B0" stroke="#0E1726" stroke-width="2.5"/>
+    </svg>
+    <text x="0" y="190" font-family="Georgia, 'DejaVu Serif', serif" font-size="76" font-weight="bold" fill="#E8B04B">Cufflink</text>
+    <text x="4" y="236" font-family="sans-serif" font-size="28" fill="#F5EBD8">Files, ringtones &amp; sounds — for your wrist.</text>
+  </g>
+</svg>

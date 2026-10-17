@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="512" height="512">
+  <title>Cufflink</title>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="56%">
+      <stop offset="0" stop-color="#1D2B45"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </radialGradient>
+  </defs>
+  <circle cx="54" cy="54" r="54" fill="url(#bg)"/>
+  <circle cx="54" cy="54" r="25" fill="none" stroke="#E8B04B" stroke-width="5"/>
+  <path d="M54,33.5v3 M54,71.5v3 M33.5,54h3 M71.5,54h3" stroke="#8A6A2C" stroke-width="2" stroke-linecap="round"/>
+  <path d="M45,40h12l7,7v21a2,2 0 0 1 -2,2h-17a2,2 0 0 1 -2,-2v-26a2,2 0 0 1 2,-2z" fill="#F5EBD8"/>
+  <path d="M57,40v5a2,2 0 0 0 2,2h5z" fill="#E8B04B"/>
+  <path d="M48,53h12 M48,58h12 M48,63h8" stroke="#0E1726" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="71.7" cy="36.8" r="6.5" fill="#3FC1B0" stroke="#0E1726" stroke-width="2.5"/>
+</svg>
