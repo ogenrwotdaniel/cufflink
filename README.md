@@ -113,10 +113,14 @@ pushes a sound straight into the system picker.
 
 ## Status: honest notes
 
-- **Not yet run on a real watch.** It builds, the unit tests pass and lint is clean, but
-  nothing has been checked on hardware yet.
-- Whether a staged sound shows up in **Samsung's** sound picker (rather than stock
-  Wear OS's) still needs checking on the Galaxy Watch Ultra.
+- **Verified on a Galaxy Watch Ultra (SM-L705N, Wear OS / API 36) with a Galaxy S25 Edge,
+  2026-10-17:** after the adb grants, "Set as ringtone" switched the watch's ringtone, and
+  Samsung's own *Settings → Sounds and vibration → Ringtone* showed the new sound by name.
+  Phone → watch beams arrived intact (215 KB and 6.7 MB mp3s) and appeared in the Pocket.
+  The Sound Shelf reads the current ringtone, notification and alarm sounds correctly, and the
+  audio player plays.
+- Not yet observed: the image/video/text/PDF viewers, watch → phone "Send to phone",
+  the staged-only path (no WRITE_SETTINGS), and bezel scrubbing by hand.
 - Large beams run in a process-scoped coroutine, not a foreground service. If you leave
   the phone app mid-transfer, Android may kill a very long one.
 - Because the Data Layer needs Google Play Services, Cufflink can't go in the main F-Droid repo.
