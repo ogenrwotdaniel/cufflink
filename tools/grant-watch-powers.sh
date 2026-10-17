@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Grant Cufflink the two watch permissions that Galaxy watches give no screen for.
+# Grant Cufflink the two watch permissions that the Galaxy Watch Ultra gives no screen for.
 #
 #   WRITE_SETTINGS          -> set ringtone / notification / alarm sound in one tap
 #   MANAGE_EXTERNAL_STORAGE -> browse every folder, not just the media library

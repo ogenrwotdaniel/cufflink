@@ -14,7 +14,7 @@ import com.ogenrwotdaniel.cufflink.wear.data.WatchStorage
 /**
  * Turns an audio file into a watch ringtone, notification sound or alarm.
  *
- * This is the problem Cufflink was started for: Galaxy Watch settings only offer
+ * This is the problem Cufflink was started for: Galaxy Watch Ultra settings only offer
  * the sounds already in the system picker, and there is no on-watch way to put a
  * file there. Two steps, and either is useful alone:
  *

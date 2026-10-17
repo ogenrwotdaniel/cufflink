@@ -10,7 +10,7 @@ import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.input.rotary.onRotaryScrollEvent
 
 /**
- * Route the bezel (the Ultra's touch bezel, or a rotating crown) to [onScroll],
+ * Route the bezel (the Galaxy Watch Ultra's touch bezel — a swipe round the screen edge — or any rotary input) to [onScroll],
  * in raw pixels — positive is clockwise. The modifier grabs focus on entry,
  * because rotary events only go to the focused node.
  */

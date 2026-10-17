@@ -4,8 +4,8 @@
 
 <h1 align="center">Cufflink</h1>
 <p align="center"><b>Files, ringtones & sounds — for your wrist.</b><br/>
-An open-source file manager and sound installer for Galaxy Watch (built on a Watch Ultra),
-with a phone companion that beams files across.</p>
+An open-source file manager and sound installer built for the <b>Samsung Galaxy Watch Ultra</b>,
+with a phone companion that beams files across. Other Wear OS 4+ watches should work too.</p>
 
 <p align="center"><img src="docs/art/feature-graphic.png" width="720" alt="A phone beaming a sound file to a watch" /></p>
 
@@ -13,7 +13,7 @@ with a phone companion that beams files across.</p>
 
 ## Why
 
-Galaxy Watch settings will only let you pick a ringtone, notification sound or alarm
+On the Galaxy Watch Ultra, Settings will only let you pick a ringtone, notification sound or alarm
 from the sounds already on the watch, and there's no on-watch way to add one. Opening
 a photo, a PDF or a text file on the watch is just as awkward. Cufflink handles both.
 
@@ -26,9 +26,9 @@ a photo, a PDF or a text file on the watch is just as awkward. Cufflink handles 
 | **Pocket** (watch) | Your inbox for beamed files, newest first. Every arrival posts a notification; tapping it opens the file. |
 | **Sound Shelf** (watch) | Shows the ringtone, notification and alarm sounds in use now (tap one to hear it), then every sound the watch could switch to. |
 | **Drawer** (watch) | Browse the watch's Pictures, Sounds and Videos. With all-files access you can browse every folder. |
-| **Peek** (watch) | Built-in viewers: **images** (pinch, or turn the bezel to zoom), **audio** (turn the bezel to scrub ±5 s, with a progress ring round the screen edge), **video**, **text**, and **PDF** (turn the bezel or tap a side to change page). |
+| **Peek** (watch) | Built-in viewers: **images** (pinch, or swipe round the touch bezel to zoom), **audio** (swipe round the touch bezel to scrub ±5 s, with a progress ring round the screen edge), **video**, **text**, and **PDF** (swipe round the touch bezel or tap a side to change page). |
 | **Send back** (watch) | Send any watch file to the phone. It's saved to `Downloads/Cufflink`. |
-| **Powers** (watch) | Shows every permission and whether it's granted, and gives the adb line for the two that Galaxy watches have no settings screen for. |
+| **Powers** (watch) | Shows every permission and whether it's granted, and gives the adb line for the two that the Galaxy Watch Ultra has no settings screen for. |
 
 The **bezel gauge** is a brass ring around the edge of the watch's home screen that fills
 up with used storage. The audio player reuses it as a progress ring.
@@ -40,7 +40,7 @@ up with used storage. The audio player reuses it as a progress ring.
    That's enough for it to show up in the watch's own **Settings → Sounds** picker, and
    it needs no permission.
 2. **Apply:** `RingtoneManager.setActualDefaultRingtoneUri` sets it as the default. This
-   needs `WRITE_SETTINGS`. Most Galaxy watches have no screen to grant it, so grant it
+   needs `WRITE_SETTINGS`. The Galaxy Watch Ultra has no screen to grant it, so grant it
    once over adb:
 
 ```bash
@@ -105,7 +105,7 @@ pushes a sound straight into the system picker.
 |---|---|
 | Gradle / AGP | 9.6 / 9.4.1, Kotlin 2.4 (AGP built-in Kotlin) |
 | Phone | minSdk 29, targetSdk 36, Jetpack Compose + Material 3 |
-| Watch | minSdk 33 (Wear OS 4+), targetSdk 36, Compose for Wear OS Material 3 1.7 |
+| Watch | Galaxy Watch Ultra (SM-L705); minSdk 33 (Wear OS 4+), targetSdk 36, Compose for Wear OS Material 3 1.7 |
 
 ```bash
 ./gradlew assembleDebug testDebugUnitTest lintDebug
@@ -116,7 +116,7 @@ pushes a sound straight into the system picker.
 - **Not yet run on a real watch.** It builds, the unit tests pass and lint is clean, but
   nothing has been checked on hardware yet.
 - Whether a staged sound shows up in **Samsung's** sound picker (rather than stock
-  Wear OS's) still needs checking on a Watch Ultra.
+  Wear OS's) still needs checking on the Galaxy Watch Ultra.
 - Large beams run in a process-scoped coroutine, not a foreground service. If you leave
   the phone app mid-transfer, Android may kill a very long one.
 - Because the Data Layer needs Google Play Services, Cufflink can't go in the main F-Droid repo.

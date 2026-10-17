@@ -197,7 +197,7 @@ private fun Hero() {
         )
         Spacer(Modifier.height(8.dp))
         Text("Cufflink", style = MaterialTheme.typography.headlineLarge, fontWeight = FontWeight.SemiBold, color = Cuff.Brass)
-        Text("Files for your wrist", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        Text("Files & ringtones for your Galaxy Watch Ultra", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }
 
@@ -285,7 +285,7 @@ private fun PowersCard() {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Text("Unlock watch powers", style = MaterialTheme.typography.titleMedium)
             Text(
-                "Galaxy watches hide two settings Cufflink can use. Grant them once from a computer with adb " +
+                "The Galaxy Watch Ultra hides two settings Cufflink can use. Grant them once from a computer with adb " +
                     "(watch: Settings › Developer options › Wireless debugging).",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,

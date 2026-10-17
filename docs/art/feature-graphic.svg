@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 500" width="1024" height="500">
-  <title>Cufflink — files for your wrist</title>
+  <title>Cufflink — files for your Galaxy Watch Ultra</title>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#16213A"/>
@@ -43,6 +43,6 @@
       <circle cx="71.7" cy="36.8" r="6.5" fill="#3FC1B0" stroke="#0E1726" stroke-width="2.5"/>
     </svg>
     <text x="0" y="190" font-family="Georgia, 'DejaVu Serif', serif" font-size="76" font-weight="bold" fill="#E8B04B">Cufflink</text>
-    <text x="4" y="236" font-family="sans-serif" font-size="28" fill="#F5EBD8">Files, ringtones &amp; sounds — for your wrist.</text>
+    <text x="4" y="236" font-family="sans-serif" font-size="28" fill="#F5EBD8">Files &amp; ringtones for your Galaxy Watch Ultra.</text>
   </g>
 </svg>
