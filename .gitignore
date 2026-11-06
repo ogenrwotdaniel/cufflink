@@ -13,3 +13,4 @@ build/
 keystore.properties
 .kotlin/
 CLAUDE.md
+AGENTS.md

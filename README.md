@@ -103,7 +103,7 @@ pushes a sound straight into the system picker.
 
 | | |
 |---|---|
-| Gradle / AGP | 9.6 / 9.4.1, Kotlin 2.4 (AGP built-in Kotlin) |
+| Gradle / AGP | 9.8 / 9.5.1, Kotlin 2.4 (AGP built-in Kotlin) |
 | Phone | minSdk 29, targetSdk 36, Jetpack Compose + Material 3 |
 | Watch | Galaxy Watch Ultra (SM-L705); minSdk 33 (Wear OS 4+), targetSdk 36, Compose for Wear OS Material 3 1.7 |
 
